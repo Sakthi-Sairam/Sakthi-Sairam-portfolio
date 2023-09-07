@@ -604,6 +604,11 @@ form input, form textarea{
     .row{
         flex-direction: column;
     }
+    .about-col-1 img:hover{
+        box-shadow: none;
+        -webkit-box-shadow:none;
+        -moz-box-shadow: none;
+    }
 
     /* -----skills---- */
     .tab-links{
