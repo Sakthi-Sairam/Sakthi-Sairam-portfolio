@@ -383,6 +383,8 @@ span.blue{
     margin-top: 50px;
 }
 .work{
+    max-width: 400px;
+    max-height: 500px;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -406,7 +408,7 @@ span.blue{
     align-items: center;
     justify-content: center;
     flex-direction:column ;
-    padding: 0 40px;
+    padding: 0 5px;
     text-align: center;
     font-size: 14px;
     transition: height 0.5s;
