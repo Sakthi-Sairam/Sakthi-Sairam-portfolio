@@ -671,37 +671,4 @@ form input, form textarea{
         font-size: 1rem;
     }
 
-
-
-    /* additionals can be removed */
-
-    #page1{
-        height: 36vh;
-    }
-
-    #secondh1{
-        position: relative;
-        z-index: 10000000;
-    }
 }
-
-
-/* trashhhhhh */
-
-#tag{
-    height:10%;
-    width:20%;
-    background:blue;
-    margin:50px;
-    transform-style: preserve-3d;
-    transform: perspective(1000px);
-    position:absolute;
-    z-index: 999999;
-  }
-
-
-  @media (max-width: 425px){
-    #page1{
-        height: 12vh;
-    }
-  }
