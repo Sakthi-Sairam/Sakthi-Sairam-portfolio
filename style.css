@@ -636,7 +636,7 @@ form input, form textarea{
         height: auto;
     }
     /* -----about section---- */
-    .about-col-2{
+    .about-col-2, #about .sub-title {
         text-align: center;
     }
     .about-col-2 .links{
