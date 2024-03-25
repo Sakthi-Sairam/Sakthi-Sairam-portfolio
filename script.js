@@ -55,3 +55,11 @@ menuItems.forEach((menuItem) => {
     menuItem.classList.add('selected');
   });
 });
+
+function loaderAnimation() {
+  var loader = document.querySelector("#loader")
+  setTimeout(function () {
+      loader.style.top = "-100%"
+  }, 4200)
+}
+loaderAnimation()
