@@ -63,3 +63,16 @@ function loaderAnimation() {
   }, 4200)
 }
 loaderAnimation()
+
+function visitcount(){
+  let visit=document.getElementById("visit");
+fetch('https://api.counterapi.dev/v1/ssr/ssr/up')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then(data => visit.innerHTML=data.count)
+  .catch(error => console.error('There was a problem with the fetch operation:', error));}
+visitcount()
