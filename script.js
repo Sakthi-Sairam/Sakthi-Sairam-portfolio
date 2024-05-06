@@ -60,13 +60,13 @@ function loaderAnimation() {
   var loader = document.querySelector("#loader")
   setTimeout(function () {
       loader.style.top = "-100%"
-  }, 4200)
+  }, 4100)
 }
 loaderAnimation()
 
 function visitcount(){
   let visit=document.getElementById("visit");
-fetch('https://api.counterapi.dev/v1/ssr/ssr/up')
+fetch('https://api.counterapi.dev/v1/ssr/ssremove/up')
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');
