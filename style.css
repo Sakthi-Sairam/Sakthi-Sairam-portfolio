@@ -212,7 +212,7 @@ p,h3{
   background: linear-gradient(to right, #0072ff, #00c6ff, #00ff85, #00fffb, rgb(0, 198, 212));
   animation: rotate 20s infinite;
   opacity: 1;
-  filter: blur(200px);
+  filter: blur(180px);
 }
 /* #blur {
     height: 100%;

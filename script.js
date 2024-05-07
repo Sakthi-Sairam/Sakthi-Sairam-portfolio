@@ -66,7 +66,7 @@ loaderAnimation()
 
 function visitcount(){
   let visit=document.getElementById("visit");
-fetch('https://api.counterapi.dev/v1/ssr/ssremove/up')
+fetch('https://api.counterapi.dev/v1/ssr/ssr/up')
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');
