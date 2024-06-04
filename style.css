@@ -230,6 +230,7 @@ span.blue,.gradient{
   outline: none;
   background: linear-gradient(45deg, #0072ff, #00c6ff, #00ff85, #00fffb, rgb(0, 198, 212));
   background-size: 200% 100%;
+  background-clip:text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   background-size: 200% 200%;
@@ -728,6 +729,7 @@ form input, form textarea{
     font-size: 6vw;
     color: transparent;
     background:  linear-gradient(to right, #0072ff, #00c6ff, #00ff85, #00fffb, rgb(0, 198, 212));
+    background-clip: text;
     -webkit-background-clip: text;
     position: absolute;
     opacity: 0;
@@ -784,5 +786,14 @@ form input, form textarea{
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #3cffc5; /* color of the scrollbar */
+  }
+
+  /* footer image counter---------------------------------- */
+  #footer img{
+    margin: 2vw;
+    width: 150px;
+  }
+  #footer{
+    padding-bottom:10vh;
   }
   
