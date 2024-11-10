@@ -797,3 +797,27 @@ form input, form textarea{
     padding-bottom:10vh;
   }
   
+  /* ------------blur & hover effect----------------
+
+/* Remove the previous hover effects on container1 */
+#timeline .container1:hover > * {
+    filter: none;
+}
+
+/* Set up transitions for smooth effects */
+#timeline .container1 .box {
+    transition: all 0.3s ease;
+}
+
+/* Create a parent hover state that doesn't affect anything */
+#timeline .container1 .contents:hover .box {
+    filter: blur(3px);
+}
+
+/* When hovering over a specific box, remove its blur and add effects */
+#timeline .container1 .contents .box:hover {
+    filter: blur(0px);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(33, 33, 33, 0.333);
+}
+  
