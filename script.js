@@ -76,3 +76,42 @@ fetch('https://api.counterapi.dev/v1/ssr/ssr/up')
   .then(data => visit.innerHTML=data.count)
   .catch(error => console.error('There was a problem with the fetch operation:', error));}
 visitcount()
+
+// -----------------cursor follower------------
+const cursor = document.querySelector('.cursor-follower');
+
+let mouseX = 0; // Actual mouse X position
+let mouseY = 0; // Actual mouse Y position
+let followerX = 0; // Cursor follower X position
+let followerY = 0; // Cursor follower Y position
+const delay = 0.1; // Delay factor (lower is slower, higher is faster)
+
+// Mouse movement
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+// Smooth animation loop
+function animateCursor() {
+  followerX += (mouseX - followerX) * delay;
+  followerY += (mouseY - followerY) * delay;
+  cursor.style.transform = `translate(${followerX}px, ${followerY}px) translate(-50%, -50%)`;
+
+  requestAnimationFrame(animateCursor); // Continuously update the position
+}
+
+// Start the animation loop
+animateCursor();
+
+// Hover effect on links
+document.querySelectorAll('a').forEach((link) => {
+  let className = link.classList.contains('no-hover-cursor') ? "shirnk" : "expand";
+  link.addEventListener('mouseenter', () => {
+    cursor.classList.add(className);
+  });
+  link.addEventListener('mouseleave', () => {
+    cursor.classList.remove(className);
+  });
+});
+

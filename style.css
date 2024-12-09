@@ -15,6 +15,7 @@
 *::selection{
     color: #0f0d0d;
     background-color: aliceblue;
+    -webkit-text-fill-color: #0f0d0d;
 }
 html{
     scroll-behavior:smooth;
@@ -23,6 +24,7 @@ html{
 body{
     height: 100%;
     width: 100%;
+    user-select: none;
     background-color: #0f0d0d;
 }
 p,h3{
@@ -319,6 +321,12 @@ span.blue,.gradient{
     position: relative;
     transition: all 0.5s ease 0s;
     border-radius: 11px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 .tab-contents ul {
     list-style: none;
@@ -372,6 +380,7 @@ span.blue,.gradient{
 #timeline{
     margin-top: 8vw;
     padding-bottom: 10vw;
+    overflow-x: hidden;
 }
 
 #timeline>.container1{
@@ -543,6 +552,7 @@ span.blue,.gradient{
 #contact{
     padding: 50px 0;
     border-bottom: 2px solid #6c6c6c;
+    user-select: text;
 }
 #contact h2{
     text-align: center;
@@ -554,6 +564,7 @@ span.blue,.gradient{
     font-size: 1.5rem;
     margin-bottom: 1rem;
     text-align: center;
+    width: 100%;
 }
 
 #contact h3 i{
@@ -685,7 +696,7 @@ form input, form textarea{
     .tab-links{
         font-size: 5vw;
         margin: 2vw;
-        border:none;
+        /* border:none; */
     }
     .edit{
         display: none;
@@ -707,7 +718,9 @@ form input, form textarea{
     .visitContainer{
         line-height: 1.1;
     }
-
+    .cursor-follower{
+        display: none;
+    }
 }
 /* ---------------------Loader------------------ */
 
@@ -819,5 +832,33 @@ form input, form textarea{
     filter: blur(0px);
     transform: scale(1.1);
     box-shadow: 0 0 20px rgba(33, 33, 33, 0.333);
+}
+
+/* -----------------cursor follower------------ */
+/* Cursor follower base style */
+.cursor-follower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: width 0.2s ease, height 0.2s ease;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  .cursor-follower.expand {
+    width: 50px;
+    height: 50px;
+  }
+
+.cursor-follower.shirnk{
+    width: 1px;
+    height: 1px;
 }
   

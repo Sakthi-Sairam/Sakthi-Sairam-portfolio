@@ -32,6 +32,7 @@
     <div class="main">
         <div id="blob"></div>
         <div id="blur"></div>
+        <div class="cursor-follower"></div>
 
         <div class="page1" id="page1">
             <div id="nav"><a href="#">
@@ -52,7 +53,7 @@
                 <h1 id="secondh1" class="hacker2" data-value="SAIRAM" data-aos="fade-down">Sairam</h1>
                 <h5>ASPIRING DEVELOPER</h5>
                 <!-- <button class="button" role="button"><span class="blue" style="margin-right: 5px;">MY</span> RESUME</button> -->
-                <a class="button" href="https://drive.google.com/file/d/1otxgn50yikmwQD7cU3aeMv2l8CSxaIm2/view?usp=drive_link"><span class="blue" style="margin-right: 5px;">MY</span> RESUME</a><br>
+                <a class="button" target="_blank" href="https://drive.google.com/file/d/1otxgn50yikmwQD7cU3aeMv2l8CSxaIm2/view?usp=drive_link"><span class="blue" style="margin-right: 5px;">MY</span> RESUME</a><br>
                 <a href="#about"><img src="./scroll-down.gif" alt="not come" width="70px"></a>
             </div>
         </div>
@@ -68,10 +69,10 @@
                         
                         <p>I'm a third-year Computer Science Engineering student at RMK College with an impressive 8.5+ CGPA. I'm a passionate full-stack developer and competitive programmer who loves problem-solving. Aiming to gain valuable real-world experience and contribute to innovative projects.</p>
                         <div class="links">
-                            <a href="https://www.linkedin.com/in/sakthi-sairam" target="_blank"><i class="bi bi-linkedin"></i></a>
-                            <a href="https://github.com/Sakthi-Sairam" target="_blank"><i class="bi bi-github"></i></a>
-                            <a href="http://www.skillrack.com/profile/352523/3b15f76f890537e20363bb47efee368f892d1a62" target="_blank"><i class="bi bi-code-slash"></i></a>
-                            <a href="https://leetcode.com/Sakthi_Sairam/" target="_blank"><svg style="margin-top: 19px;"  width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104a5.35 5.35 0 0 0-.125.513a5.527 5.527 0 0 0 .062 2.362a5.83 5.83 0 0 0 .349 1.017a5.938 5.938 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523a2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0m-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z"/></svg></i></a>
+                            <a href="https://www.linkedin.com/in/sakthi-sairam" target="_blank" class="no-hover-cursor"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/Sakthi-Sairam" target="_blank" class="no-hover-cursor"><i class="bi bi-github"></i></a>
+                            <a href="http://www.skillrack.com/profile/352523/3b15f76f890537e20363bb47efee368f892d1a62" target="_blank" class="no-hover-cursor"><i class="bi bi-code-slash"></i></a>
+                            <a href="https://leetcode.com/Sakthi_Sairam/" target="_blank" class="no-hover-cursor"><svg style="margin-top: 19px;"  width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104a5.35 5.35 0 0 0-.125.513a5.527 5.527 0 0 0 .062 2.362a5.83 5.83 0 0 0 .349 1.017a5.938 5.938 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523a2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0m-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z"/></svg></i></a>
                         </div>
                     </div>
 
@@ -153,17 +154,17 @@
                                 <h3>Zoho</h3>
                                 <p>Project Trainee</p>
                             </div>
+                         <div class="box" data-aos="flip-down">
+                                <h4>1 month</h4>
+                                <h3>Altruisty</h3>
+                                <p>Completed a full-stack internship at Altruisty, gaining hands-on experience with React and Firebase while contributing to a real-world SaaS project, enhancing my skills in professional project handling.</p>
+                            </div>
                             <div class="box" data-aos="flip-down">
                                 <h4>1 month</h4>
                                 <h3>Full Stack developer Intern at BigFix.in</h3>
                                 <p>Created key business diagrams for SAAS project (repairworks.in). Conducted surveys and competitor analysis to guide feature selection. Designed an engaging features section for the homepage, enhancing user experience.</p>
                             </div>
-                            <div class="box" data-aos="flip-down">
-                                <!-- <h4>1 week</h4> -->
-                                <h3>Marcello Tech</h3>
-                                <p>Artificial Intelligence Composition Exploring
-                                    Creative Possibilities</p>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -183,6 +184,28 @@
                             <div class="links">
                                 <a target="_blank" href="https://movie-react-web-app.netlify.app/"><i class="bi bi-box-arrow-up-right"></i></a>
                                 <a target="_blank" href="https://github.com/Sakthi-Sairam/Movie-webApp-1st-React-website"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-tilt-scale="1.1" data-tilt data-tilt-gyroscope="false"> <!--  data-aos="flip-up" -->
+                        <img src="images/project-7.png">
+                        <div class="layer">
+                            <h3>Health Care Plus</h3>
+                            <p>Health record management system with express, MongoDB and EJS</p>
+                            <div class="links">
+                                <!-- <a target="_blank" href="https://movie-react-web-app.netlify.app/"><i class="bi bi-box-arrow-up-right"></i></a> -->
+                                <a target="_blank" href="github.com/sakthi-sairam/automatic-health-monitoringsystem-clghackathon/"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work" data-tilt-scale="1.1" data-tilt data-tilt-gyroscope="false"> <!--  data-aos="flip-up" -->
+                        <img src="images/project-8.png">
+                        <div class="layer">
+                            <h3>Events Hub</h3>
+                            <p>Event management system with React and Firebase</p>
+                            <div class="links">
+                                <a target="_blank" href="https://event-management-page.web.app/"><i class="bi bi-box-arrow-up-right"></i></a>
+                                <a target="_blank" href="https://github.com/Sakthi-Sairam/event-management"><i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
